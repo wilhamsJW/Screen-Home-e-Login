@@ -1,0 +1,80 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body div {
+    display: grid;
+    place-items: center;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+body div main {
+    /* background: green; */
+    display: grid;
+    /* padding: 2rem; */
+
+    letter-spacing: .1rem;
+}
+
+body div main h1 p {
+    background: #6c50cf;
+    
+}
+
+body div main h1 {
+    text-align: center;
+}
+
+body div main label {
+    padding: .4rem;
+    font-weight: bold;
+    color: #5a4343;
+}
+
+body div main a {
+    text-align: center;
+    padding: .7rem;
+    letter-spacing: .1rem;
+    text-decoration: none;
+}
+
+body div main hr {
+    border: 0;
+    border-bottom: .1rem solid #5376e9;
+    width: 10.1rem;
+    margin-top: -3rem;
+    cursor: pointer;
+    /* margin-bottom: .6rem; */
+}
+
+body div main input {
+    background:#f3eded;
+    border: 0;
+    border: .1rem solid #f3eded;
+    border-radius: .3rem;
+    padding: .4rem;
+    letter-spacing: .1rem;
+    padding: .8rem;
+    width: 11rem;
+}
+
+body div main input:focus {
+    box-shadow: 0;
+    outline: 0;
+}
+
+body div main button {
+    background: #5376e9;
+    height: 2.3rem;
+    border: 0;
+    border-radius: .4rem;
+    color: #fff;
+    margin-top: .6rem;
+    letter-spacing: .1rem;
+}
