@@ -3,11 +3,10 @@ html, body {
     padding: 0;
     outline: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 body div {
-    display: grid;
-    place-items: center;
     display: grid;
     place-items: center;
     width: 100%;
@@ -15,26 +14,47 @@ body div {
 }
 
 body div main {
-    /* background: green; */
     display: grid;
-    /* padding: 2rem; */
-
     letter-spacing: .1rem;
-}
-
-body div main h1 p {
-    background: #6c50cf;
-    
-}
-
-body div main h1 {
     text-align: center;
 }
+
+body div main img {
+    text-align: center;
+    cursor: default;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Feito Logo Spectrum com CSS mas preferir exibir com png já que se trata de logo 
+   Deixei o código abaixo apenas para ver que dá pra fazer com CSS 
+*/
+/* body div main h1 {
+    text-align: center;
+    cursor: default;
+    justify-content: center;
+}
+
+body div main h1 div {
+    display: grid;
+    background: #eb7d6f;
+    width: .6rem;
+    height: .6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 1.2rem;
+    margin-right: 4rem;
+	float: right;
+    text-align: center;
+    justify-content: center;
+} */
 
 body div main label {
     padding: .4rem;
     font-weight: bold;
     color: #5a4343;
+    text-align: left;
 }
 
 body div main a {
@@ -46,11 +66,11 @@ body div main a {
 
 body div main hr {
     border: 0;
-    border-bottom: .1rem solid #5376e9;
-    width: 10.1rem;
+    border-bottom: .1rem solid #0062b2;
+    width: 10.3rem;
     margin-top: -3rem;
+    margin-right: .8rem;
     cursor: pointer;
-    /* margin-bottom: .6rem; */
 }
 
 body div main input {
@@ -70,11 +90,29 @@ body div main input:focus {
 }
 
 body div main button {
-    background: #5376e9;
+    background: #0062b2;
     height: 2.3rem;
     border: 0;
     border-radius: .4rem;
     color: #fff;
     margin-top: .6rem;
+    letter-spacing: .1rem;
+    cursor: pointer;
+    width: 13rem;
+}
+
+body div main button:hover {
+    background: #015192;
+}
+
+body div main a img {
+    width: .8rem;
+    height: .8rem;
+    cursor: pointer;
+}
+
+body footer {
+    margin-top: -2.7rem;
+    text-align: center;
     letter-spacing: .1rem;
 }
