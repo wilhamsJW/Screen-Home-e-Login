@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles.css" />
+  <title>DASHBOARD HOME</title>
+</head>
+
+<body id="body">
+  <div class="container">
+    <nav class="navbar">
+      <div class="nav_icon" onclick="toggleSidebar()">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+      <div class="navbar__left">
+        <a href="#"><img src="./assets/spectrum__logo.png" /></a>
+        <input type="search" placeholder="Search..." class="input_search" />
+      </div>
+      <div class="navbar__right">
+        <a href="#">
+          <img src="./assets/chat_window.png" alt="chat" />
+        </a>
+        <a href="#">
+          <img src="./assets/notification.png" alt="notificações" />
+        </a>
+        <a href="#">
+          <img width="30" src="assets/user_avatar.jpg" alt="foto do perfil" />
+        </a>
+        <p>&nbsp;Maurício Souto</p>
+        <a href="#">
+          <img src="./assets/down_arrow.png" alt="seta" />
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="main__container">
+        <div class="main__title">
+          <h2>Resumo</h2>
+          <div class="main__button">
+            <button>Dias</button>
+            <button>Semanas</button>
+            <button>Meses</button>
+          </div>
+
+        </div>
+
+        <!-- Cards -->
+        <div class="main__cards">
+          <div class="card">
+            <p class="text-primary-p">Média de valor de pedido</p>
+            <div class="card_inner">
+              <h2>R$ 306,20</h2>
+              <span class="font-bold text-title">Gráfico</span>
+            </div>
+            <p class="low__percentage">1.3% &nbsp;&nbsp;<i class="bi bi-arrow-down"></i>&nbsp;&nbsp;<span>desde
+                início</span></p>
+          </div>
+
+          <div class="card">
+            <p class="text-primary-p">Quantidade de pedidos</p>
+            <div class="card_inner">
+              <h2>7650</h2>
+              <span class="font-bold text-title">Gráfico</span>
+            </div>
+            <p class="low__percentage">1.2% &nbsp;&nbsp;<i class="bi bi-arrow-down"></i>&nbsp;&nbsp;<span>desde
+                início</span></p>
+          </div>
+
+          <div class="card">
+            <p class="text-primary-p">Compras únicas</p>
+            <div class="card_inner">
+              <h2>3,137</h2>
+              <span class="font-bold text-title">Gráfico</span>
+            </div>
+            <p class="growing__percentage">2.3% &nbsp;&nbsp;<i class="bi bi-arrow-up"></i>&nbsp;&nbsp;<span>desde
+                início</span></p>
+          </div>
+        </div>
+        <!-- End cards -->
+
+        <!-- Country Sales  -->
+        <div class="sales">
+          <div class="sales__left">
+            <h3>Vendas por país</h3>
+            <img src="./assets/sales_country.png" />
+            <div id="more">+</div>
+            <div id="less">-</div>
+          </div>
+
+          <div class="sales__left__country">
+            <!-- Caso haja vários países a tela possui scrool e altura máxima para evitar quebra de layout
+                Seguintes classes adicionadas no css:  overflow: hidden;height: max(19rem);overflow-y: scroll;
+                * overflow: hidden -> evita q o conteúdo ultrapasse a div
+                * height: max(19rem); -> altura máxima pra evitar quebra de layout
+                * overflow-y: scroll -> adciona barra de rolagem dentro da div caso o conteúdo seja maior q a div
+              -->
+            <div id="title">País</div>
+            <div id="title">Percentual</div>
+            <div id="title">Pedidos</div>
+
+            <div class="aligntable"><img src="./assets/country_usa.png" />&nbsp;&nbsp;&nbsp;Estados Unidos</div>
+            <div class="aligntable">45%</div>
+            <div class="aligntable">3242</div>
+
+            <div class="aligntable"><img src="./assets/country_canada.png" />&nbsp;&nbsp;&nbsp;Canadá</div>
+            <div class="aligntable">20%</div>
+            <div class="aligntable">1530</div>
+
+            <div class="aligntable"><img src="./assets/country_russia.png" />&nbsp;&nbsp;&nbsp;Rússia</div>
+            <div class="aligntable">15%</div>
+            <div class="aligntable">1147</div>
+
+            <div class="aligntable"><img src="./assets/country_china.png" />&nbsp;&nbsp;&nbsp;China</div>
+            <div class="aligntable">10%</div>
+            <div class="aligntable">765</div>
+
+            <div class="aligntable"><img src="./assets/country_australia.png" />&nbsp;&nbsp;&nbsp;Austrália</div>
+            <div class="aligntable">5%</div>
+            <div class="aligntable">382</div>
+
+            <div class="aligntable"><img src="./assets/country_franca.png" />&nbsp;&nbsp;&nbsp;França</div>
+            <div class="aligntable">5%</div>
+            <div class="aligntable">382</div>
+          </div>
+
+          <div class="sales__right">
+            <div class="sales__right__title">
+              <div>
+                <h1>Visitantes</h1>
+              </div>
+            </div>
+
+            <div class="sales__right__cards">
+              <h1>156.927</h1><br />
+              <p class="growing__percentage">2.3% &nbsp;&nbsp;<i class="bi bi-arrow-up"></i>&nbsp;&nbsp;<span>desde
+                  início</span></p>
+            </div>
+            <div class="grafico">Gráfico</div>
+            <div class="info">Mais informações
+              <i class="bi bi-chevron-right"></i>
+            </div>
+          </div>
+        </div> <!-- Country sales end -->
+      </div> <!-- End main container -->
+
+      <!-- Reports sales -->
+      <div class="reports">
+        <div class="reports__title">
+          <h3>Relatórios de vendas</h3>
+          <div class="reports__button">
+            <div>
+              <i class="bi bi-file-earmark-arrow-down"></i>
+              <button type="submit">Exportar</button>
+            </div>
+          </div>
+          <div class="reports__title__statisticsicon">
+            <i id="icon_one"></i>
+            <p>Esperado</p>
+            <i id="icon_sec"></i>
+            <p>Atual</p>
+          </div>
+          <div class="reports__title__money_statistics">
+            <p>$80mil</p>
+            <hr />
+            <p>$70mil</p>
+            <hr />
+            <p>$60mil</p>
+            <hr />
+            <p>$50mil</p>
+            <hr />
+            <p>$40mil</p>
+            <hr />
+            <p>$30mil</p>
+            <hr />
+            <p>$20mil</p>
+            <hr />
+            <p>$10mil</p>
+            <hr />
+            <p id="zero">0</p>
+            <hr />
+          </div>
+          <div style="margin-top: -16rem; margin-left: 5rem; min-width: 40rem;" id="apex1"></div>
+          <div class="months">
+            <p>Jan20</p>
+            <p>Fev20</p>
+            <p>Mar20</p>
+            <p>Abr20</p>
+            <p>Mai20</p>
+            <p>Jun20</p>
+            <p>Jul20</p>
+            <p>Ago20</p>
+            <p>Set20</p>
+            <p>Out20</p>
+            <p>Nov20</p>
+            <p>Dez20</p>
+          </div>
+        </div>
+
+        <!-- Reports__product -->
+        <div class="reports__product">
+          <h3>Vendas por tipo de produto</h3>
+          <div class="reports__product__graphic"></div>
+
+          <div class="reports__product__info_product">
+            <div id="sales_result">
+              <p>Eletrõnicos</p>
+              <p>Mobília</p>
+              <p>Bolsas e pacotes</p>
+              <p>Acessórios</p>
+              <div id="sales_percentagem">
+                <p>50%</p>
+                <p>25%</p>
+                <p>15%</p>
+                <p>10%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="reports__product__info">Mais informações
+            <i class="bi bi-chevron-right"></i>
+          </div>
+
+          <footer>
+            <div>Ícones feitos por <a href="https://www.flaticon.com/br/autores/th-studio" title="th studio">th
+                studio</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>
+          </footer>
+
+
+        </div> <!-- Endreports__product -->
+
+      </div> <!-- End Reports sales -->
+
+    </main>
+
+    <div id="sidebar">
+      <div class="sidebar__menu">
+        <div class="nav_icon_close" onclick="toggleSidebar()">
+          <i class="bi bi-x-lg"></i>
+        </div>
+        <div class="sidebar__link">
+          <i class="bi bi-house-door"></i>
+          <a href="#">Inicio</a>
+        </div>
+        <div class="sidebar__link">
+          <i class="bi bi-building"></i>
+          <a href="#">Relatórios</a>
+        </div>
+        <div class="sidebar__link">
+          <i class="bi bi-envelope"></i>
+          <a href="#">Mensagens</a>
+          <a class="notification">16</a>
+        </div>
+        <div class="sidebar__link">
+          <i class="bi bi-file-earmark-spreadsheet-fill"></i>
+          <a href="#">Contratos</a>
+        </div>
+        <div class="sidebar__link">
+          <i class="bi bi-people-fill"></i>
+          <a href="#">Alunos</a>
+        </div>
+        <div class="sidebar__link">
+          <i class="bi bi-chat-dots"></i>
+          <a href="#">Chats</a>
+        </div>
+        <div class="sidebar__link">
+          <i class="bi bi-journal-check"></i>
+          <a href="#">Agenda</a>
+        </div>
+        <div class="sidebar__link">
+          <i class="bi bi-question-circle"></i>
+          <a href="#">Suporte</a>
+        </div>
+        <div class="sidebar__link">
+          <i class="bi bi-gear"></i>
+          <a href="#">Configurações</a>
+        </div>
+      </div>
+    </div>
+    <!-- Crédito para o autor -->
+  </div> <!-- End Container -->
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
