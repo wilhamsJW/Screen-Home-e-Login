@@ -64,12 +64,9 @@ var options = {
   const navIcon = document.querySelector('.nav_icon');
   const navIconClose = document.querySelector('.nav_icon_close');
   
-  var x = screen.width
-  console.log('screen.availWidth', screen.availWidth)
   
   function toggleSidebar() {
-    console.log('x vv', x)
-    if (screen.availWidth < 850) console.log('é 850')
+    
     // Primeiro click para abrir menu mobile
     if (!sidebarOpen) {
       closeContent.style.display = "flex";  // seta o conteído da página para exibir apenas o menu mobile
