@@ -15,7 +15,7 @@
  <h1 align="center">Tela Principal - Desktop</h1>
 
  <p align="center">
-  <img src="home/assets/screen_main.png" width="600px">
+  <img src="home/assets/main_.png" width="600px">
  </p>
 
   <h1 align="center">Tela Principal - secundária gráfico</h1>
