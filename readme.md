@@ -12,6 +12,12 @@
 
 *OBS:* _"Ainda necessita de pequenos ajustes :) Se quiser contribuir fica a vontade"_
 
+ <h1 align="center">Tela Login</h1>
+
+ <p align="center">
+  <img src="home/assets/screen_login.png" width="600px">
+ </p>
+
  <h1 align="center">Tela Principal - Desktop</h1>
 
  <p align="center">
