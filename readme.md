@@ -10,6 +10,8 @@
 
 + Efeitos sobre menu de transição de cores
 
+*OBS:* _"Ainda necessita de pequenos ajustes :) Se quiser contribuir fica a vontade"_
+
  <h1 align="center">Tela Principal - Desktop</h1>
 
  <p align="center">
@@ -33,3 +35,4 @@
  <p align="center">
   <img src="home/assets/mobile_iphone.png" width="600px">
  </p>
+
