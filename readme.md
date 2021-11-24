@@ -15,3 +15,15 @@
  <p align="center">
   <img src="home/assets/screen_main.png" width="600px">
  </p>
+
+  <h1 align="center">Tela Principal - secundária gráfico</h1>
+
+ <p align="center">
+  <img src="home/assets/map.png" width="600px">
+ </p>
+
+  <h1 align="center">Tela Principal - secundária gráfico circle</h1>
+
+ <p align="center">
+  <img src="home/assets/product_map.png" width="600px">
+ </p>
